@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="erd-kopma" name="ERD Kopma">
+    <mxGraphModel dx="1488" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;" value="&lt;b&gt;Anggota&lt;/b&gt;&lt;hr&gt;PK no_anggota&lt;br&gt;nim_anggota (UNIQUE)&lt;br&gt;nama_anggota&lt;br&gt;program_studi&lt;br&gt;no_hp_anggota&lt;br&gt;status_anggota&lt;br&gt;total_poin" vertex="1">
+          <mxGeometry height="190" width="280" x="70" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;" value="&lt;b&gt;Petugas&lt;/b&gt;&lt;hr&gt;PK kode_petugas&lt;br&gt;nama_petugas&lt;br&gt;peran_petugas" vertex="1">
+          <mxGeometry height="120" width="250" x="650" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;" value="&lt;b&gt;Pemasok&lt;/b&gt;&lt;hr&gt;PK kode_pemasok&lt;br&gt;nama_pemasok" vertex="1">
+          <mxGeometry height="100" width="250" x="1110" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;" value="&lt;b&gt;Barang&lt;/b&gt;&lt;hr&gt;PK kode_barang&lt;br&gt;nama_barang&lt;br&gt;kategori_barang&lt;br&gt;harga_jual&lt;br&gt;stok_barang&lt;br&gt;minimum_stok" vertex="1">
+          <mxGeometry height="170" width="280" x="1110" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;" value="&lt;b&gt;Penjualan&lt;/b&gt;&lt;hr&gt;PK no_nota_penjualan&lt;br&gt;tanggal_penjualan&lt;br&gt;FK no_anggota (NULL)&lt;br&gt;FK kode_petugas" vertex="1">
+          <mxGeometry height="140" width="300" x="420" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;fillColor=#eef8f6;" value="&lt;b&gt;Detail Penjualan&lt;/b&gt;&lt;hr&gt;PK, FK no_nota_penjualan&lt;br&gt;PK, FK kode_barang&lt;br&gt;qty_penjualan&lt;br&gt;harga_satuan_detail_penjualan" vertex="1">
+          <mxGeometry height="150" width="310" x="770" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;" value="&lt;b&gt;Pembelian&lt;/b&gt;&lt;hr&gt;PK no_faktur_pembelian&lt;br&gt;tanggal_pembelian&lt;br&gt;FK kode_pemasok&lt;br&gt;FK kode_petugas" vertex="1">
+          <mxGeometry height="140" width="300" x="770" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=13;fillColor=#ffffff;strokeColor=#397a75;strokeWidth=2;fillColor=#eef8f6;" value="&lt;b&gt;Detail Pembelian&lt;/b&gt;&lt;hr&gt;PK, FK no_faktur_pembelian&lt;br&gt;PK, FK kode_barang&lt;br&gt;qty_pembelian&lt;br&gt;harga_satuan_pembelian" vertex="1">
+          <mxGeometry height="150" width="310" x="1110" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="6" value="0..1 anggota&#xa;per penjualan; 0..N penjualan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="6" value="1 petugas&#xa;per penjualan; 0..N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="8" value="1 petugas&#xa;per pembelian; 0..N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="8" value="1 pemasok&#xa;per pembelian; 0..N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;" target="7" value="1..N detail&#xa;per nota">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;" target="7" value="1 barang&#xa;per detail; 0..N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;" target="9" value="1..N detail&#xa;per faktur">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeColor=#397a75;strokeWidth=1.5;fontSize=11;labelBackgroundColor=#ffffff;" target="9" value="1 barang&#xa;per detail; 0..N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="100" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontSize=16;fontColor=#175e58;" value="&lt;b&gt;Windi Dwi Hartati&lt;/b&gt; | NPM: 25430011" vertex="1">
+          <mxGeometry height="35" width="650" x="400" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="FFTonsG8weufIpOMQg1Z-100" parent="1" style="shape=stencil(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);lineShape=1;strokeColor=default;" value="" vertex="1">
+          <mxGeometry height="129.6692506578084" width="157.39492910948846" x="465.95153523980684" y="611.5837271080989" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

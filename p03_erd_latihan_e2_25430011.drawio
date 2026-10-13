@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram name="Latihan E.2" id="erd-e2-25430011">
+    <mxGraphModel dx="1046" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="620" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#1A237E;" value="&lt;b style=&quot;font-size:18px&quot;&gt;Latihan E.2 — Relasi penjualan–barang banyak-ke-banyak langsung (tanpa entitas asosiatif)&lt;/b&gt;&lt;br&gt;Windi Dwi Hartati &amp;nbsp;|&amp;nbsp; NPM 25430011" vertex="1">
+          <mxGeometry height="56" width="1000" x="40" y="12" as="geometry" />
+        </mxCell>
+        <mxCell id="e_penjualan" parent="1" style="swimlane;fontStyle=1;startSize=28;fillColor=#2E7D32;fontColor=#FFFFFF;strokeColor=#2E7D32;swimlaneFillColor=#FFFFFF;rounded=0;fontSize=13;collapsible=0;" value="penjualan" vertex="1">
+          <mxGeometry height="172" width="250" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_0_k" parent="e_penjualan" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#2E7D32;fontSize=10;fontStyle=1;fontColor=#E65100;align=center;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="24" width="50" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_0_n" parent="e_penjualan" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=11;fontStyle=1;align=left;spacingLeft=8;verticalAlign=middle;" value="id_penjualan" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_1_k" parent="e_penjualan" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#2E7D32;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_1_n" parent="e_penjualan" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="no_nota_penjualan" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_2_k" parent="e_penjualan" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#2E7D32;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_2_n" parent="e_penjualan" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="tgl_penjualan" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_3_k" parent="e_penjualan" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#2E7D32;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="24" width="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_3_n" parent="e_penjualan" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="id_petugas" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_4_k" parent="e_penjualan" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#2E7D32;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="FK" vertex="1">
+          <mxGeometry height="24" width="50" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_4_n" parent="e_penjualan" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="id_anggota" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_5_k" parent="e_penjualan" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#2E7D32;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="penjualan_5_n" parent="e_penjualan" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#2E7D32;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="bayar_penjualan" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="e_barang" parent="1" style="swimlane;fontStyle=1;startSize=28;fillColor=#C62828;fontColor=#FFFFFF;strokeColor=#C62828;swimlaneFillColor=#FFFFFF;rounded=0;fontSize=13;collapsible=0;" value="barang" vertex="1">
+          <mxGeometry height="196" width="250" x="700" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_0_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#E65100;align=center;verticalAlign=middle;" value="PK" vertex="1">
+          <mxGeometry height="24" width="50" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_0_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=1;align=left;spacingLeft=8;verticalAlign=middle;" value="id_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_1_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_1_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="kode_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_2_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_2_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="nama_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_3_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_3_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="kategori_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_4_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_4_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="harga_jual_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_5_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_5_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="stok_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_6_k" parent="e_barang" style="rounded=0;html=1;fillColor=#F5F5F5;strokeColor=#C62828;fontSize=10;fontStyle=1;fontColor=#00796B;align=center;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="24" width="50" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="barang_6_n" parent="e_barang" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#C62828;fontSize=11;fontStyle=0;align=left;spacingLeft=8;verticalAlign=middle;" value="stok_min_barang" vertex="1">
+          <mxGeometry height="24" width="200" x="50" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="rel" edge="1" parent="1" source="e_penjualan" style="edgeStyle=none;html=1;startArrow=ERzeroToMany;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=10;endSize=10;strokeColor=#37474F;strokeWidth=1.5;fontSize=10;fontStyle=2;fontColor=#37474F;labelBackgroundColor=#FFFFFF;" target="e_barang" value="berisi / tercantum di">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lab0" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1A237E;" value="0..N" vertex="1">
+          <mxGeometry height="16" width="30" x="356" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="lab1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#1A237E;" value="1..N" vertex="1">
+          <mxGeometry height="16" width="30" x="664" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="callout" parent="1" style="rounded=1;arcSize=6;html=1;whiteSpace=wrap;dashed=1;strokeColor=#C62828;strokeWidth=2;fillColor=#FFEBEE;fontSize=11;fontColor=#B71C1C;align=left;spacingLeft=10;verticalAlign=middle;" value="&lt;b&gt;Data yang hilang&lt;/b&gt;&lt;br&gt;• qty_detail_penjualan (jumlah barang per nota)&lt;br&gt;• harga_satuan_detail_penjualan (harga saat transaksi)&lt;br&gt;&lt;i&gt;Tidak ada entitas tempat keduanya melekat&lt;/i&gt;" vertex="1">
+          <mxGeometry height="104" width="320" x="365" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="callout_line" edge="1" parent="1" style="endArrow=block;endFill=1;dashed=1;strokeColor=#C62828;strokeWidth=1.5;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="300" as="sourcePoint" />
+            <mxPoint x="525" y="218" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;arcSize=4;dashed=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;" value="" vertex="1">
+          <mxGeometry height="100" width="960" x="40" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" value="&lt;b&gt;Keterangan&lt;/b&gt; &amp;nbsp; &lt;b style=&quot;color:#E65100&quot;&gt;PK&lt;/b&gt; kunci primer &amp;nbsp; &lt;b style=&quot;color:#00796B&quot;&gt;FK&lt;/b&gt; kunci tamu &amp;nbsp; &lt;b&gt;0..N&lt;/b&gt; nol atau banyak &amp;nbsp; &lt;b&gt;1..N&lt;/b&gt; satu atau banyak" vertex="1">
+          <mxGeometry height="22" width="800" x="54" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontStyle=2;fontColor=#546E7A;" value="Relasi petugas dan anggota ke penjualan tidak digambar agar fokus pada relasi penjualan–barang (FK-nya tetap tercantum). Garis: satu nota berisi 1..N barang; satu barang tercantum di 0..N nota." vertex="1">
+          <mxGeometry height="40" width="660" x="54" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="sig" parent="1" style="text;html=1;align=right;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1A237E;" value="Windi Dwi Hartati — 25430011" vertex="1">
+          <mxGeometry height="24" width="250" x="736" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="5sTzsFjw1D3FouGF2RM_-1" parent="1" style="shape=stencil(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);lineShape=1;strokeColor=default;" value="" vertex="1">
+          <mxGeometry height="88.29183998168983" width="127.51872845808214" x="689.4502248112954" y="328.49804023367494" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
